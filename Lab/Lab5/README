@@ -1,0 +1,17 @@
+#------------------------------------------------------------------------------
+# Christopher S. Gradwohl
+# cgradwoh
+# README
+# README file for Dictionary ADT
+#------------------------------------------------------------------------------
+
+Table of Contents
+    1. README
+    2. Makefile
+    3. Dictionary.c
+    4. Dictionary.h
+    5. DictionaryTest.c
+    6. DictionaryClient.c
+
+Notes to Grader
+    This is a C language version of the Dictionary ADT. 
