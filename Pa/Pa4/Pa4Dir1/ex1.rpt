@@ -1,0 +1,8 @@
+Report file: ex1.rpt
+3 Jobs: 
+(2, 2, *) (3, 4, *) (5, 6, *) 
+1 processor: totalWait=  , maxWait=  , averageWait=  
+Report file: ex1.rpt
+3 Jobs: 
+(2, 2, 15) 
+2 processors: totalWait=  , maxWait=  , averageWait=  

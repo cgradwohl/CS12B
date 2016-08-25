@@ -1,0 +1,79 @@
+//-----------------------------------------------------------------------------
+// Dictionary.java
+// Christopher S. Gradwohl
+// cgradwoh
+// pa3
+// README file for pa3
+//-----------------------------------------------------------------------------
+
+Table of Contents
+    1. README
+    2. Dictionary.java
+    3. DictionaryTest.java
+    4. DuplicateKeyException.java
+    5. KeyNotFoundException.java
+    6. DictionaryClient.java
+    7. Makefile
+
+Notes to Grader
+    2. Dictionary.java--------------------------------------------------------
+            Dictionary.java is a linked list implementation of java. I used a single linked list
+            with a dedicated head node, which points to the first element in the list. The elements
+            of the list are Node objects with a String key field, a String value field, and
+            a Node next field.
+
+            Dictionary.java implements seven interface functions:
+
+                public boolean isEmpty();
+                        returns true if this Dictionary is empty, false otherwise
+
+                public int size();
+                        returns the number of entries in this Dictionary
+
+                public String lookup(String key);
+                        returns value associated key, or null reference if no such key exists
+
+                public void insert(String key, String value) throws DuplicateKeyException;
+                        inserts new (key,value) pair into this Dictionary
+                        pre: lookup(key)==null
+                        uses private inner function findKey to test pre conditions
+
+                public void delete(String key) throws KeyNotFoundException;
+                        deletes pair with the given key
+                        pre: lookup(key)!=null
+                        uses private inner function findKey to test pre conditions
+
+                public void makeEmpty();
+                        returns the dictionary to the empty state
+
+                public String toString();
+                        returns a String representation of this Dictionary
+                        overrides Object's toString() method
+                        prints elements in the order they where inserted
+
+
+
+    3. DictionaryTest.java
+            DictionaryTest.java is a test client I wrote. There are three separate tests.
+            It first tests the empty dictionary, the one element dictionary, and the
+            several element Dictionary. Each test tests the seven interface functions as well
+            as the two Exception class'.
+
+            All three tests can be run at the same time, simply compile and run DictionaryTest.java
+            To test the Exception Class' in each test you MUST uncomment each Exception sub test.
+
+    4. DuplicateKeyException.java
+            DuplicateKeyException.java extends the java RuntimeException for the Dictionary ADT.
+            It is used to test preconditions of various Interface methods.
+
+    5. KeyNotFoundException.java
+            KeyNotFoundException.java extends the java RuntimeException for the Dictionary ADT.
+            It is used to test preconditions of various Interface methods.
+
+    6. DictionaryClient.java
+            pa3 test client for the Linked List implementation of the Dictionary ADT
+            This test client was included in the programming assignment.
+
+    7. Makefile
+            Creates an executable JAR file named DictionaryClient.
+            Also have clean functionality 

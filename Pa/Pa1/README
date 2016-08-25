@@ -1,0 +1,29 @@
+// --------------------------------------------------------------//
+// README
+// Christopher S. Gradwohl
+// cgradwoh
+// pa1
+// 4 - 6 - 16
+// This file lists the files submitted for pa1
+
+    Programming Assignment 1
+
+        1.      Recursion.java
+        2.      Makefile
+        3.      README
+
+        Summary:    The purpose of this assignment is to gain experience
+                    implementing recursive algorithms in Java. In the
+                    Recursion.java file there are five recursive methods
+                    with headings:
+
+                    static void reverseArray1(int[] X, int n, int[] Y)
+                    static void reverseArray2(int[] X, int n, int[] Y)
+                    static void reverseArray3(int[] X, int i, int j)
+                    static int maxArrayIndex(int[] X, int p, int r)
+                    static int minArrayIndex(int[] X, int p, int r)
+
+                    The functions reverseArray1, reverseArray2, reverseArray3,
+                    reverse's the order of an array. The functions maxArrayIndex,
+                    minArrayIndex return the index of the maximum and minimum
+                    elements in the array. 
